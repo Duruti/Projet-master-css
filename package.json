@@ -1,0 +1,22 @@
+{
+  "name": "projet-master-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duruti/Projet-master-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duruti/Projet-master-css/issues"
+  },
+  "homepage": "https://github.com/Duruti/Projet-master-css#readme",
+  "dependencies": {
+    "sass": "^1.28.0"
+  }
+}
