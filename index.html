@@ -9,12 +9,13 @@
    <title>Projet fin de cours CSS</title>
 </head>
 <body>
+  
    <nav class="menu">
       <ul >
          <li><a href="#accueil" >Accueil</a></li>
          <li><a href="#propos">A propos</a></li>
-         <li><a href="#">Création</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="#creation">Création</a></li>
+         <li><a href="#formulaire">Contact</a></li>
       </ul>
    </nav>
    <div id="accueil">
@@ -34,5 +35,38 @@
          </div>
       </div>
    </div>
+   <div id="creation">
+      <h2>Mes créations</h2>
+      <div class="separator"></div>
+      <div class="photos">
+         <img src="ressources/portfolio/imgP1.jpg" alt="img1">
+         <img src="ressources/portfolio/imgP2.jpg" alt="img2">
+         <img src="ressources/portfolio/imgP3.jpg" alt="img3">
+         <img src="ressources/portfolio/imgP4.jpg" alt="img4">
+         <img src="ressources/portfolio/imgP5.jpg" alt="img5">
+         <img src="ressources/portfolio/imgP6.jpg" alt="img6">
+         <img src="ressources/portfolio/imgP7.jpg" alt="img7">
+         <img src="ressources/portfolio/imgP8.jpg" alt="img8">
+         <img src="ressources/portfolio/imgP9.jpg" alt="img9"> 
+        
+      </div>
+   </div>
+   <div class="transparent">
+      <h2>NATURE</h2>
+   </div>
+  
+   <div id="formulaire">
+      <h2>Rentrons en Contact !</h2>
+      <form class="containerInput">
+         <label for="name">Prenom</label>
+         <input type="text" name="name" id="name" placeholder="Ton prénom" required>
+         <label for="lastname">Nom</label>
+         <input type="text" name="lastname" id="lastname" placeholder="Ton nom" required>
+         <label for="name">Message </label>
+         <textarea  name="name" id="message" rows="8" placeholder="Ton message" required aria-setsize="no"></textarea>
+         <input id="btn" type="submit" value="Envoyer">
+      </form>
+   </div>  
+   <div class="imgBg">
 </body>
 </html>
