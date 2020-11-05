@@ -6,6 +6,8 @@ html{
 }
 
 body{
+   width: 100vw;
+   height: auto;
    margin: 0;
    padding: 0;
    font-family: 'Poppins',sans-serif;
@@ -14,7 +16,7 @@ body{
 .menu{
    position: fixed;
    margin: 0;
-   width: 100%;
+   width: 100vw;
    background-color: #F5F5F5;
    
    font-size: 22px;
@@ -23,13 +25,16 @@ body{
       z-index: 5;
    }
    ul{
+      width: 100vw;
       margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       list-style: none;
   
       li{
          margin: 15px;
+         padding: 0;
          a{
             text-decoration: none;;
             color: black;
@@ -61,6 +66,14 @@ body{
       font-weight: 400;
    }
 }
+.img{
+   margin: 20px;
+   width: 540px;
+   height: 810px;
+   background-image: url(../ressources/imgNature.jpg);
+   background-position: center;
+   background-size: cover;
+}
 #propos{
    background-color: #F5F5F5;
    padding-top: 40px;
@@ -72,18 +85,12 @@ body{
       font-weight: 400;
    }
    .presentation{
+      width: 100%;
       margin: 0 auto;
       display: flex;
       max-width: 1200px;
       justify-content: center;
-      .img{
-         margin: 20px;
-         width: 540px;
-         height: 810px;
-         background-image: url(../ressources/imgNature.jpg);
-         background-position: center;
-         background-size: cover;
-      }
+      
       .text{
          margin: 20px;
          max-width: 540px;
@@ -115,11 +122,12 @@ body{
 }
 #creation{
    padding-top: 80px;
-   
+   height: auto;
    width: 100%;
    height: auto;
    background-color: #f1f1f1;
    margin: 0 auto;
+   padding-bottom: 50px;
    h2{
       margin-top: 0px;
       padding-top: 30px;
@@ -129,7 +137,9 @@ body{
    }
    .photos{
       display: grid;
-     
+      width: 65%;
+      height: auto;
+      margin: 0 auto;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(3,1fr);
       justify-items: center;
@@ -139,6 +149,8 @@ body{
       justify-content: center;
       
       img{
+         justify-self: center;
+         align-self: center;
          width: 300px;
          height: 400px;
          object-position: center;
@@ -153,7 +165,7 @@ body{
    z-index: -1;
    position: fixed;
    top: 0px;
-   width: 100%;
+   width: 100vw;
   height: 100vh;
    background-image: url(../ressources/para.jpg);
    background-size: cover;
@@ -239,7 +251,9 @@ footer{
    }
 }
 @media  screen and (max-width:1200px){
-
+   .img{
+      background-color: brown;
+   }
    .presentation{
       display: flex;
       flex-direction: column;
@@ -261,7 +275,8 @@ footer{
          flex-wrap: 1;
       
          img{
-            width: 100%;
+            margin: 10px;
+            width: 90%;
             height: auto;
             object-fit: cover;
             margin: 35px 0;
@@ -272,7 +287,10 @@ footer{
 
 }
 @media  screen and (max-width:1000px){
-
+   .img{
+      width: 80%;
+      height: 150vw;
+   }
    #accueil{
       h1{
          font-size: 50px;
@@ -285,38 +303,41 @@ footer{
    .separator{
       width: 150px;
    }
+   
    .menu{
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      justify-content:end;
-      background-color: #F5F5F5;
-      z-index: 3;
-      ul{
-         display: none;
-      }
-      .btnMenu{
-         margin: 10px;
-         height: 50px;
-         width: 50px;
-         background-image: url(../ressources/menu.svg);
+      font-size: 10px;
+   }   // .menu{
+   //    display: flex;
+   //    flex-direction: column;
+   //    align-items: end;
+   //    justify-content:end;
+   //    background-color: #F5F5F5;
+   //    z-index: 3;
+   //    ul{
+   //       display: none;
+   //    }
+   //    .btnMenu{
+   //       margin: 10px;
+   //       height: 50px;
+   //       width: 50px;
+   //       background-image: url(../ressources/menu.svg);
         
-      }
-      .menuPhone{
-         width: 100%;
-         height: auto;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         a{
-            margin: 10px 0;
-            font-size: 35px;
-            text-decoration: none;
-            color: black;
-         }
-      }
+   //    }
+   //    .menuPhone{
+   //       width: 100%;
+   //       height: auto;
+   //       display: flex;
+   //       flex-direction: column;
+   //       align-items: center;
+   //       a{
+   //          margin: 10px 0;
+   //          font-size: 35px;
+   //          text-decoration: none;
+   //          color: black;
+   //       }
+   //    }
 
-   }
+   // }
    #accueil{
       h1{
          font-size: 40px;
