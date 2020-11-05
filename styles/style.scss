@@ -1,0 +1,105 @@
+*, ::before ::after{
+   box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins',sans-serif;
+   scroll-behavior: smooth;
+}
+.menu{
+   position: fixed;
+   margin: 0;
+   width: 100%;
+   background-color: #F5F5F5;
+   
+   font-size: 22px;
+   
+   ul{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  
+      li{
+         margin: 15px;
+         a{
+            text-decoration: none;;
+            color: black;
+         }
+      }
+   }
+}
+#accueil{
+   padding-top: 50px;
+   width: 100vw;
+   height: 800px;
+   background-image: url(../ressources/home.jpg) ; 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #f1f1f1;
+   text-align: center;
+   h1{
+      margin-top: 150px;
+      margin-bottom: 30px;
+      font-family: 'Abril Fatface', cursive;
+      font-size: 70px;
+      &::first-letter{
+         font-size: 170px;
+      }
+   }
+   h2{
+      font-size: 22px;
+      font-weight: 400;
+   }
+}
+#propos{
+
+   padding-top: 30px;
+   text-align: center;
+   h2{
+      font-size: 40px;
+      font-weight: 400;
+   }
+   .presentation{
+      margin: 0 auto;
+      display: flex;
+      width: 1200px;
+      justify-content: center;
+      .img{
+         margin: 20px;
+         width: 540px;
+         height: 810px;
+         background-image: url(../ressources/imgNature.jpg);
+         background-position: center;
+         background-size: cover;
+      }
+      .text{
+         margin: 20px;
+         width: 540px;
+         background-color: #F0FFFF;
+         h3{
+            font-size: 35px;
+            font-weight: 400;
+         }
+         h4{
+            font-size: 16px;
+            font-weight: 400;
+         }
+         p{
+            font-size: 19px;
+            margin-top: 30px;
+            &::first-letter{
+               font-size: 26px;
+            }
+         }
+         .separator{
+            margin: 50px auto;
+            width: 50px;
+            height: 1px;
+            background-color: black;
+         }
+      }
+   }
+}

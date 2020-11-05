@@ -1,3 +1,130 @@
+*, ::before ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+}
 
+.menu {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  font-size: 22px;
+}
+
+.menu ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#accueil {
+  padding-top: 50px;
+  width: 100vw;
+  height: 800px;
+  background-image: url(../ressources/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+#accueil h1 {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 70px;
+}
+
+#accueil h1::first-letter {
+  font-size: 170px;
+}
+
+#accueil h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#propos {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#propos h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#propos .presentation {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#propos .presentation .img {
+  margin: 20px;
+  width: 540px;
+  height: 810px;
+  background-image: url(../ressources/imgNature.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#propos .presentation .text {
+  margin: 20px;
+  width: 540px;
+  background-color: #F0FFFF;
+}
+
+#propos .presentation .text h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+#propos .presentation .text h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#propos .presentation .text p {
+  font-size: 19px;
+  margin-top: 30px;
+}
+
+#propos .presentation .text p::first-letter {
+  font-size: 26px;
+}
+
+#propos .presentation .text .separator {
+  margin: 50px auto;
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
 /*# sourceMappingURL=style.css.map */
