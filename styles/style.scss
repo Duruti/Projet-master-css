@@ -303,41 +303,50 @@ footer{
    .separator{
       width: 150px;
    }
-   
+   .menuPhone{
+      width: 100%;
+      height: auto;
+      display: none;
+      flex-direction: column;
+      align-items: left;
+      background-color: #F5F5F5;
+      z-index: 5;
+      a{
+         margin: 10px 0;
+         margin-left: 20px;
+         font-size: 25px;
+         text-decoration: none;
+         color: black;
+      }
+      .separator{
+         width: 90%;
+         margin: 0 auto;
+      }
+   }
    .menu{
       font-size: 10px;
-   }   // .menu{
-   //    display: flex;
-   //    flex-direction: column;
-   //    align-items: end;
-   //    justify-content:end;
-   //    background-color: #F5F5F5;
-   //    z-index: 3;
-   //    ul{
-   //       display: none;
-   //    }
-   //    .btnMenu{
-   //       margin: 10px;
-   //       height: 50px;
-   //       width: 50px;
-   //       background-image: url(../ressources/menu.svg);
-        
-   //    }
-   //    .menuPhone{
-   //       width: 100%;
-   //       height: auto;
-   //       display: flex;
-   //       flex-direction: column;
-   //       align-items: center;
-   //       a{
-   //          margin: 10px 0;
-   //          font-size: 35px;
-   //          text-decoration: none;
-   //          color: black;
-   //       }
-   //    }
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content:end;
+      background-color: #F5F5F5;
+      z-index: 3;
+      ul{
+         display: none;
+      }
+      
+   }
+   .btnMenu{
+      margin: 10px;
+      height: 35px;
+      width: 35px;
+      align-self: flex-end;
+      background-image: url(../ressources/menu.svg);
+      background-repeat: no-repeat;
+   }     
+  
+   
 
-   // }
    #accueil{
       h1{
          font-size: 40px;

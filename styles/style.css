@@ -372,8 +372,60 @@ footer p {
   .separator {
     width: 150px;
   }
+  .menuPhone {
+    width: 100%;
+    height: auto;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    background-color: #F5F5F5;
+    z-index: 5;
+  }
+  .menuPhone a {
+    margin: 10px 0;
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+  }
+  .menuPhone .separator {
+    width: 90%;
+    margin: 0 auto;
+  }
   .menu {
     font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    background-color: #F5F5F5;
+    z-index: 3;
+  }
+  .menu ul {
+    display: none;
+  }
+  .btnMenu {
+    margin: 10px;
+    height: 35px;
+    width: 35px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    background-image: url(../ressources/menu.svg);
+    background-repeat: no-repeat;
   }
   #accueil h1 {
     font-size: 40px;
